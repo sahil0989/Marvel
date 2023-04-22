@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="input.css">
+  <title>Marvel</title>
+</head>
+
+<body class="font-mono">
+
+  <!-- Nav Bar -->
+
+  <nav class="sticky flex align-middle top-0 bg-slate-500 w-full h-14 font-medium font-momo justify-evenly py-2 z-10">
+    <img src="/Images/white-avengers-logo-in-solid-black-zler0yxwmhzfrski-modified.png" alt="Logo" class="h-10 ">
+    <a href="#home" onclick="bio()"
+      class="hover:bg-slate-300 px-5 rounded-full pt-1 text-xl text-center font-semibold font-mono">Home</a>
+    <div class="flex flex-col">
+      <button onclick="myFunction()"
+        class="hover:bg-slate-300 px-5 rounded-full text-xl py-1 font-semibold">Characters</button>
+      <div
+        class="mt-1 flex-col flex dropdown dropdown_open bg-slate-300 text-lg font-semibold rounded-xl pl-5 px-2 z-10 w-auto">
+        <a href="#captain" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Captain
+          America</a>
+        <a href="#iron" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Iron Man</a>
+        <a href="#widow" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Black Widow</a>
+        <a href="#dr" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Dr. Strange</a>
+        <a href="#spider" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Spider Man</a>
+        <a href="#star" class="hover:bg-slate-400 rounded-xl px-2 mt-1" onclick="myFunction(); bio()">Star Lord</a>
+        <a href="#groot" class="hover:bg-slate-400 rounded-xl mb-1 px-2 mt-1" onclick="myFunction(); bio()">Groot</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- bio -->
+
+  <section id="bio">
+
+    <div id="home" class="h-screen">
+      <div class="container" id="Home">
+        <h2 class="pl-8">MARVEL</h2>
+        <img src="/Images/1.1.png" class="object cap-img" data-value="-2" alt="">
+        <img src="/Images/2.1.png" class="object iron-img" data-value="6" alt="">
+        <img src="/Images/3.1.png" class="object black-img" data-value="4" alt="">
+        <img src="/Images/4.1.png" class="object doc-img" data-value="-6" alt="">
+        <img src="/Images/5.1.png" class="object spidy-img" data-value="8" alt="">
+        <img src="/Images/6.1.png" class="object lord-img" data-value="-4" alt="">
+        <img src="/Images/7.1.png" class="object groot-img" data-value="-5" alt="">
+        <img src="/Images/8.1.png" class="object thor-img" data-value="5" alt="">
+      </div>
+    </div>
+
+    <!-- New Home page -->
+
+
+
+    <div id="captain" style="background-image: url(/Images/2.jpg);" class="h-screen bg-fixed">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Captain America</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">America’s World War II Super-Soldier continues his fight
+          in
+          the
+          present as an Avenger and untiring sentinel of liberty.</p>
+        <a href="#captain1"><button onclick="america()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button></a>
+        <a href="#captain2">
+          <button onclick="captain2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="iron" style="background-image: url(/Images/3.jpg);" class="h-screen pl-6">
+      <div class="w-2/5 pt-40">
+        <h2 class="text-center text-5xl font-bold upper">Iron Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">Inventor Tony Stark applies his genius for high-tech
+          solutions
+          to problems as Iron Man, the armored Avenger.</p>
+        <a href="#iron1">
+          <button onclick="iron()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-rose-800 font-mono font-semibold hover:bg-rose-700 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#iron2">
+          <button onclick="iron2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-rose-800 font-mono font-semibold hover:bg-rose-700 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="widow" style="background-image: url(/Images/4.jpg);" class="h-screen bg-fixed pl-12">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Black Widow</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">A deadly assassin is closing in on Natasha Romanoff. Now
+          Natasha must reunite with an unlikely group of spies from her past in order to survive and stop a lethal
+          force
+          from being unleashed on the world.</p>
+        <a href="#widow1">
+          <button onclick="widow()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-slate-500 font-mono font-semibold hover:bg-slate-400 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#widow2">
+          <button onclick="widow2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-slate-500 font-mono font-semibold hover:bg-slate-400 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="dr" style="background-image: url(/Images/6.png);" class="h-screen p-6">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Dr. Strange</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">Once a highly successful, yet notably egotistical,
+          surgeon,
+          Doctor Stephen Strange endured a terrible accident that led him to evolve in ways he could have never
+          foreseen.
+        </p>
+        <a href="#dr1">
+          <button onclick="dr()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-indigo-400 font-mono font-semibold hover:bg-indigo-200 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#dr2">
+          <button onclick="dr2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-indigo-400 font-mono font-semibold hover:bg-indigo-200 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="spider" style="background-image: url(/Images/7.jpg);" class="h-screen bg-fixed pl-8">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Spider Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">With amazing spider-like abilities, teenage science whiz
+          Peter
+          Parker fights crime and dreams of becoming an Avenger as Spider-Man.</p>
+        <a href="#spider1">
+          <button onclick="spider()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#spider2">
+          <button onclick="spider2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="star" style="background-image: url(/Images/8.jpg);" class="h-screen pl-10">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Star Lord</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">Would-be thief Peter Quill journeys through space as
+          Star-Lord,
+          the leader of the Guardians of the Galaxy.</p>
+        <a href="#star1">
+          <button onclick="star()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-orange-800 font-mono font-semibold hover:bg-orange-700 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#star2">
+          <button onclick="star2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-orange-800 font-mono font-semibold hover:bg-orange-700 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="groot" style="background-image: url(/Images/9.jpg);" class="h-screen bg-fixed">
+      <div class="w-2/5 pt-40 hide">
+        <h2 class="text-center text-5xl font-bold upper">Groot</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono left">This tree-like being branched out of his comfort zone to
+          help
+          the Guardians of the Galaxy keep the people of the universe safe.</p>
+        <a href="#groot1">
+          <button onclick="groot()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-32 px-5 py-2 bg-red-800 font-mono font-semibold hover:bg-red-700 shadow-xl rounded-tl-lg rounded-br-lg right">Read
+            More</button>
+        </a>
+        <a href="#groot2">
+          <button onclick="groot2()"
+            class="transition-all duration-700 ease-in-out hover:px-8 hover:py-3 ml-24 px-7 py-2 bg-red-800 font-mono font-semibold hover:bg-red-700 shadow-xl rounded-tl-lg rounded-br-lg right">Movies</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Read More  -->
+
+  <section id="detailsChar">
+
+    <div id="captain1" style="background-image: url(/Images/2.jpg);"
+      class="capt captain_america h-screen bg-fixed overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20 ">
+        <h2 class="text-center text-5xl font-bold left">Captain America</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Captain America begins in the early
+          1940s,
+          when
+          Steve Rogers, a frail and sickly man, is transformed into a super-soldier through a secret military
+          experiment.
+          Armed with enhanced strength, agility, and an unbreakable shield, Captain America becomes a symbol of American
+          patriotism during World War II. <br> <br>
+
+          Throughout the war, Captain America fights against the forces of the Nazi-led HYDRA organization, led by the
+          evil Red Skull. He is aided by his best friend and fellow soldier, Bucky Barnes, who is ultimately captured
+          and
+          presumed dead. <br> <br>
+
+          After the war, Captain America is frozen in ice and remains dormant for several decades until he is discovered
+          by S.H.I.E.L.D. and revived in the present day. He struggles to adapt to modern society and comes into
+          conflict
+          with old enemies and new threats. <br> <br>
+
+          Along the way, Captain America joins forces with other heroes, including Iron Man, Thor, and the Hulk, to form
+          the Avengers. He also confronts his own internal conflicts and moral dilemmas, including the question of
+          whether
+          to follow orders blindly or to stand up for what is right. <br> <br>
+
+          In the film "Captain America: The Winter Soldier," he learns that his old friend Bucky Barnes is alive and has
+          been brainwashed and turned into a deadly assassin known as the Winter Soldier. Captain America sets out to
+          save
+          his friend and stop a conspiracy within S.H.I.E.L.D. <br> <br>
+
+          In "Captain America: Civil War," he leads a faction of heroes who oppose government regulation of their
+          actions.
+          This puts him at odds with Iron Man and the rest of the Avengers, leading to a brutal fight between the two
+          sides. <br> <br>
+
+          In "Avengers: Infinity War" and "Avengers: Endgame," Captain America plays a key role in the battle against
+          the
+          intergalactic villain Thanos. In the final battle, he wields Thor's hammer and proves himself worthy of its
+          power. After the battle, he decides to stay in the past and live out a life with Peggy Carter, the love of his
+          life whom he had to leave behind during his time as a super-soldier.</p>
+        <a href="#captain"><button onclick="america()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="iron1" style="background-image: url(/Images/3.jpg);"
+      class="ironMan iron_man h-screen pl-6 overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Iron Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Iron Man, also known as Tony Stark,
+          begins
+          with
+          his rise to power as the brilliant and wealthy CEO of Stark Industries, a major defense contractor. After
+          being
+          kidnapped by terrorists, he creates a suit of powered armor to escape and becomes a superhero, using his
+          technology and intellect to fight evil and protect the world. <br><br>
+
+          Throughout his journey, Iron Man faces numerous challenges and battles, including confrontations with
+          powerful
+          villains such as Obadiah Stane, the Mandarin, and Ultron. He also forms alliances with other heroes,
+          including
+          Captain America and the Avengers, to face even greater threats. <br><br>
+
+          Along the way, Iron Man grapples with personal demons, including his own mortality and the consequences of
+          his
+          actions. He undergoes a transformation from a reckless playboy to a more responsible and empathetic hero,
+          driven
+          by a sense of duty to protect the world and those he loves. <br><br>
+
+          In the film "Iron Man 2," he grapples with his own mortality as a result of the arc reactor in his chest. In
+          "Iron Man 3," he faces off against the Mandarin and deals with the psychological aftermath of the Battle of
+          New
+          York in "The Avengers." <br> <br>
+
+          In "Avengers: Age of Ultron," he creates an artificial intelligence named Ultron that goes rogue and
+          threatens
+          the world. This forces him to confront his own arrogance and sense of responsibility, leading to a rift with
+          Captain America and the other Avengers. <br><br>
+
+          In "Captain America: Civil War," he supports government regulation of superheroes, leading to a conflict
+          with
+          Captain America and a split in the Avengers. He also discovers that his parents were killed by the Winter
+          Soldier, leading to a personal vendetta against him. <br><br>
+
+          In "Avengers: Infinity War" and "Avengers: Endgame," Iron Man plays a crucial role in the fight against
+          Thanos,
+          using his intelligence to create a weapon capable of defeating him. In the final battle, he makes the
+          ultimate
+          sacrifice by using the Infinity Stones to snap Thanos and his army out of existence, at the cost of his own
+          life. <br><br>
+
+          In the end, Iron Man's journey is one of growth and self-discovery, as well as sacrifice and heroism. He
+          leaves
+          behind a legacy as a brilliant inventor, a selfless hero, and a beloved friend and mentor to those who
+          fought
+          alongside him.</p>
+        <a href="#iron"><button onclick="iron()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-rose-800 font-mono font-semibold hover:bg-rose-700 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="widow1" style="background-image: url(/Images/4.jpg);"
+      class="blackWidow black_widow h-screen bg-fixed pl-12 overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Black Widow</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Black Widow, also known as Natasha
+          Romanoff,
+          is one of struggle, redemption, and heroism. <br><br>
+
+          As a former Russian spy, Black Widow has a complicated past that she struggles to reconcile with her present
+          as a member of the Avengers. Throughout her journey, she grapples with her traumatic experiences and the
+          guilt
+          she carries from her former life as an assassin. <br><br>
+
+          In the film "Iron Man 2," Black Widow is introduced as a S.H.I.E.L.D. agent tasked with assisting Tony
+          Stark.
+          She demonstrates her combat skills and espionage abilities, showcasing her strength and intelligence.
+          <br><br>
+
+          In "The Avengers," she joins forces with the other superheroes to fight against Loki and the Chitauri
+          invasion. She also forms a close bond with Hawkeye, another former S.H.I.E.L.D. agent. <br><br>
+
+          In "Captain America: The Winter Soldier," Black Widow teams up with Captain America to expose a conspiracy
+          within S.H.I.E.L.D. and confronts her past as a former KGB agent. <br><br>
+
+          In "Avengers: Age of Ultron," she struggles with her own identity and fears of being a monster. She also
+          develops a romance with Bruce Banner, also known as the Hulk. <br><br>
+
+          In "Captain America: Civil War," Black Widow must choose sides in the conflict between Iron Man and Captain
+          America. She also confronts her own moral dilemmas and faces off against the villainous Helmut Zemo.
+          <br><br>
+
+          In "Avengers: Infinity War" and "Avengers: Endgame," Black Widow plays a crucial role in the fight against
+          Thanos, leading the Avengers in their efforts to reverse his snap and save the universe. She ultimately
+          sacrifices herself to obtain the Soul Stone, providing a key moment of redemption for her character.
+          <br><br>
+
+          In the upcoming film "Black Widow," we will see the origins of Natasha Romanoff as a spy and the events that
+          shaped her into the hero we know. <br><br>
+
+          In the end, Black Widow's journey is one of strength, resilience, and self-discovery. She overcomes her past
+          and embraces her role as a hero, sacrificing everything to protect those she loves and to do what is right.
+        </p>
+        <a href="#widow"><button onclick="widow()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-slate-500 font-mono font-semibold hover:bg-slate-400 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="dr1" style="background-image: url(/Images/6.png);"
+      class="drStrange dr_strange h-screen p-6 overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Dr. Strange</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Doctor Strange, also known as Stephen
+          Strange,
+          is a story of transformation and redemption. <br><br>
+
+          As a brilliant yet arrogant surgeon, Strange's life is forever changed when a car accident damages his
+          hands,
+          rendering him unable to continue his medical career. Desperate for a cure, he travels to Nepal and discovers
+          the mystical arts, becoming a powerful sorcerer and a defender of the world against supernatural threats.
+          <br><br>
+
+          Throughout his journey, Strange faces numerous challenges, both physical and psychological. He battles
+          powerful foes, including the sorcerer Kaecilius and the demon Dormammu, and works with other heroes such as
+          Wong and Mordo to protect the world from magical threats. <br><br>
+
+          In the film "Doctor Strange," he undergoes a transformation from a self-centered, materialistic man to a
+          selfless hero, learning the value of humility and sacrifice. <br><br>
+
+          In "Thor: Ragnarok," he assists Thor in his quest to save Asgard from destruction, and in "Avengers:
+          Infinity
+          War" and "Avengers: Endgame," he plays a crucial role in the fight against Thanos, using his powers to
+          manipulate time and protect the universe. <br><br>
+
+          In "Doctor Strange in the Multiverse of Madness," Strange must confront the consequences of his actions and
+          explore the darker side of the mystical arts, facing off against dangerous entities and navigating a complex
+          and treacherous multiverse. <br><br>
+
+          In the end, Doctor Strange's journey is one of growth, redemption, and heroism. He learns to use his powers
+          for good, embracing his role as a defender of the world and a protector of humanity. He is a powerful and
+          enigmatic figure, driven by a sense of duty and a deep commitment to using his powers for the greater good.
+        </p>
+        <a href="#dr"><button onclick="dr()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-indigo-400 font-mono font-semibold hover:bg-indigo-200 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="spider1" style="background-image: url(/Images/7.jpg);"
+      class="spiderMan spider_man h-screen bg-fixed pl-8 overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Spider Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Spider-Man, also known as Peter Parker,
+          is
+          one
+          of growth, responsibility, and heroism. <br><br>
+
+          As a high school student, Peter is bitten by a genetically-altered spider, gaining incredible powers and
+          becoming Spider-Man. He struggles to balance his responsibilities as a superhero with his personal life,
+          including school, his job, and his relationships with friends and family. <br><br>
+
+          Throughout his journey, Spider-Man faces numerous challenges, both physical and emotional. He battles
+          powerful
+          villains, including the Green Goblin, Doctor Octopus, and the Vulture, and works with other heroes such as
+          Iron Man and Captain America to protect the world from threats. <br><br>
+
+          In "Spider-Man: Homecoming," he navigates the challenges of being a teenage superhero, balancing his life as
+          Spider-Man with his responsibilities as a student and son figure. He also forms a close bond with his
+          mentor,
+          Tony Stark. <br><br>
+
+          In "Avengers: Infinity War" and "Avengers: Endgame," he plays a crucial role in the fight against Thanos,
+          facing incredible challenges and loss, and ultimately being dusted by Thanos' snap. <br><br>
+
+          In "Spider-Man: Far From Home," he struggles with the loss of Tony Stark and the pressure to fill his
+          mentor's
+          shoes, while facing off against a powerful new villain, Mysterio. <br><br>
+
+          In the upcoming film "Spider-Man: No Way Home," Peter will face the consequences of revealing his secret
+          identity and will explore the multiverse, working with other Spider-People from different dimensions.
+          <br><br>
+
+          In the end, Spider-Man's journey is one of growth, responsibility, and heroism. He learns the value of using
+          his powers for good, embracing his role as a defender of the world and a protector of those he loves. He is
+          a
+          symbol of hope and perseverance, inspiring others to do what is right and stand up for what they believe in.
+        </p>
+        <a href="#spider"><button onclick="spider()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="star1" style="background-image: url(/Images/8.jpg);"
+      class="starLord star_lord h-screen pl-10 overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Star Lord</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Groot is a unique one, as it is a story
+          of
+          rebirth, growth, and sacrifice. <br><br>
+
+          Groot is a tree-like alien from Planet X, who can only communicate with the phrase "I am Groot." He
+          initially
+          appears as a minor character in the Marvel Comics universe but becomes a fan favorite due to his unique
+          abilities and personality. <br><br>
+
+          In the film "Guardians of the Galaxy," Groot is one of the members of the titular team, alongside Star-Lord,
+          Gamora, Drax, and Rocket Raccoon. He is introduced as a selfless protector, using his immense size and
+          strength to shield his friends from harm. <br><br>
+
+          Throughout his journey, Groot is instrumental in the team's battles against powerful villains, such as Ronan
+          the Accuser and Thanos. He grows and regenerates from a small sprout to a fully-grown tree, demonstrating
+          his
+          unique ability to heal and regenerate. <br><br>
+
+          In "Guardians of the Galaxy Vol. 2," Groot returns as a smaller, more childlike version of himself known as
+          "Baby Groot." He remains a loyal member of the team, helping to save the universe from destruction and
+          forming
+          a close bond with Rocket Raccoon. <br><br>
+
+          In "Avengers: Infinity War," Groot joins the fight against Thanos, and in a heartbreaking scene, sacrifices
+          himself to create the handle of Thor's new weapon, Stormbreaker. <br><br>
+
+          In "Avengers: Endgame," Groot is resurrected alongside his fellow heroes and joins the fight against Thanos
+          once again, using his strength and abilities to protect his friends and save the universe. <br><br>
+
+          In the end, Groot's journey is one of rebirth, growth, and sacrifice. He learns the value of putting others
+          before himself, embracing his role as a protector and a hero. He is a symbol of strength and resilience,
+          showing that even the smallest or most unexpected beings can make a significant impact on the world.</p>
+        <a href="#star"><button onclick="star()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-orange-800 font-mono font-semibold hover:bg-orange-700 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="groot1" style="background-image: url(/Images/9.jpg);"
+      class="overflow-scroll grootMan groot_man h-screen bg-fixed ">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold left">Groot</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono right">The journey of Star-Lord, also known as Peter Quill, is
+          one
+          of adventure, growth, and redemption. <br><br>
+
+          As a young boy, Peter is abducted by the Ravagers, a group of space pirates led by Yondu. He grows up among
+          them, becoming a skilled thief and adventurer, and eventually becomes the leader of his own team, the
+          Guardians of the Galaxy. <br><br>
+
+          Throughout his journey, Star-Lord faces numerous challenges, both physical and emotional. He battles
+          powerful
+          foes, including Ronan the Accuser, Ego the Living Planet, and Thanos, and works with other heroes such as
+          Gamora, Drax, Rocket, and Groot to protect the galaxy from threats. <br><br>
+
+          In "Guardians of the Galaxy Vol. 2," Star-Lord discovers that his father is actually Ego, a god-like being
+          who
+          seeks to use his son's power to take over the universe. Peter must confront his feelings of abandonment and
+          betrayal and choose between his loyalty to his friends and his newfound family. <br><br>
+
+          In "Avengers: Infinity War" and "Avengers: Endgame," Star-Lord plays a crucial role in the fight against
+          Thanos, facing incredible challenges and loss, and ultimately causing a significant setback for the heroes
+          in
+          their fight. <br><br>
+
+          In "Guardians of the Galaxy Vol. 3," Peter will continue to explore his relationships with his friends and
+          family, and face new challenges as the leader of the Guardians. <br><br>
+
+          In the end, Star-Lord's journey is one of growth, redemption, and heroism. He learns the value of putting
+          others before himself, embracing his role as a protector and a hero. He is a symbol of courage and
+          determination, inspiring others to fight for what they believe in and to never give up, no matter how dire
+          the
+          circumstances.</p>
+        <a href="#groot"><button onclick="groot()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-red-800 font-mono font-semibold hover:bg-red-700 shadow-xl rounded-tl-lg rounded-br-lg left">Back
+            to Page</button></a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Movies -->
+
+  <section id="movies">
+
+    <div id="captain2" style="background-image: url(/Images/2.jpg);"
+      class="captainMovies captain22 h-screen bg-fixed overflow-scroll ">
+      <div class="w-2/5 pt-40 mb-20 ml-16">
+        <h2 class="text-center text-5xl font-bold">Captain America</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+            <li>Captain America: The First Avenger (2011)</li>
+            <li>The Avengers (2012)</li>
+            <li>Captain America: The Winter Soldier (2014)</li>
+            <li>Avengers: Age of Ultron (2015)</li>
+            <li>Captain America: Civil War (2016)</li>
+            <li>Avengers: Infinity War (2019)</li>
+            <li>Avengers: Endgame (2020)</li>
+            <li>The Falcon and the Winter Soldier (2021)</li>
+        </p>
+        <a href="#captain"><button onclick="captain2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="iron2" style="background-image: url(/Images/3.jpg);"
+      class="ironMovies iron22 h-screen pl-6 overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Iron Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+            <li>Iron Man (2008)</li>
+            <li>Iron Man 2 (2010)</li>
+            <li>Iron Man 3 (2013)</li>
+        </p>
+        <a href="#iron"><button onclick="iron2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-rose-800 font-mono font-semibold hover:bg-rose-700 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="widow2" style="background-image: url(/Images/4.jpg);"
+      class="widowMovies widow22 h-screen bg-fixed pl-12 overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Black Widow</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+          <li>Iron Man 2 (2010)</li>
+          <li>The Avengers (2012)</li>
+          <li>Captain America: The Winter Soldier (2014)</li>
+          <li>Avengers: Age of Ultron (2015)</li>
+          <li>Captain America: Civil War (2016)</li>
+          <li>Avengers: Infinity War (2018)</li>
+          <li>Avengers: Endgame (2019)</li>
+          <li>Black Widow (2021)</li>
+        </p>
+        <a href="#widow"><button onclick="widow2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-slate-500 font-mono font-semibold hover:bg-slate400 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+
+    </div>
+
+    <div id="dr2" style="background-image: url(/Images/6.png);" class="drMovies dr22 h-screen p-6 overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Dr. Strange</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+          <li>Doctor Strange</li>
+          <li>Thor: Ragnarok</li>
+          <li>Avengers: Infinity War (2018)</li>
+          <li>Avengers: Endgame (2019)</li>
+          <li>Spider-Man: Far From Home</li>
+          <li>Spider-Man: No Way Home</li>
+          <li>Doctor Strange in the Multiverse of Madness</li>
+        </p>
+        <a href="#dr"><button onclick="dr2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-indigo-400 font-mono font-semibold hover:bg-indigo-200 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="spider2" style="background-image: url(/Images/7.jpg);"
+      class="spiderMovies spider22 h-screen bg-fixed pl-8 overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Spider Man</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+          <li>Spider-Man (2002)</li>
+          <li>Spider-Man 2 (2004)</li>
+          <li>Spider-Man 3 (2007)</li>
+          <li>The Amazing Spider-Man (2012)</li>
+          <li>The Amazing Spider-Man 2 (2014)</li>
+          <li>Spider-Man: Homecoming (2017)</li>
+          <li>Spider-Man: Far from Home (2019)</li>
+        </p>
+        <a href="#spider"><button onclick="spider2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-purple-400 font-mono font-semibold hover:bg-purple-300 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="star2" style="background-image: url(/Images/8.jpg);"
+      class="starMovies star22 h-screen pl-10 overflow-scroll">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Star Lord</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+          <li>Guardians of the Galaxy</li>
+          <li>Guardians of the Galaxy Vol. 2</li>
+          <li>Avengers: Infinity War (2018)</li>
+          <li>Avengers: Endgame (2019)</li>
+          <li>Thor: Love and Thunder</li>
+          <li>The Guardians of the Galaxy Holiday Special</li>
+          <li>Guardians of the Galaxy Vol. 3</li>
+        </p>
+        <a href="#star"><button onclick="star2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-orange-800 font-mono font-semibold hover:bg-orange-700 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+    <div id="groot2" style="background-image: url(/Images/9.jpg);"
+      class="overflow-scroll grootMovies groot22 h-screen bg-fixed">
+      <div class="w-2/5 pt-40 mb-20">
+        <h2 class="text-center text-5xl font-bold">Groot</h2>
+        <p class="text-center pt-16 pb-16 px-10 font-mono">
+          <li></li>
+        </p>
+        <a href="#groot"><button onclick="groot2()"
+            class="transition-all duration-700 ease-in-out hover:px-6 hover:py-3 ml-48 px-5 py-2 bg-red-800 font-mono font-semibold hover:bg-red-700 shadow-xl rounded-tl-lg rounded-br-lg">Back
+            to Page</button></a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown_open,
+.captain_america,
+.iron_man,
+.black_widow,
+.dr_strange,
+.spider_man,
+.star_lord,
+.groot_man {
+    display: none;
+}
+
+.captain22,
+.iron22,
+.widow22,
+.dr22,
+.spider22,
+.star22,
+.groot22 {
+    display: none;
+}
+
+.left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.upper {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1.5s;
+}
+
+.right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1.2s;
+}
+
+.bottom {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.up {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.rt {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.bt {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.logo:nth-child(2),
+.logo1:nth-child(2),
+.spidy {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3),
+.logo1:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+@media(prefers-reduced-motion) {
+
+    .left,
+    .right,
+    .upper, .bottom {
+        transition: none;
+    }
+}
+
+/* New Home Page css  */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container img {
+    position: absolute;
+    object-fit: contain;
+}
+
+.cap-img{
+    height: 23%;
+    left: 8%;
+    top: 70%;
+}
+
+.iron-img {
+    height: 23%;
+    left: 82%;
+    top: 45%;
+}
+.black-img {
+    height: 23%;
+    left: 32%;
+    top: 13%;
+}
+.doc-img {
+    height: 23%;
+    left: 10%;
+    top: 22%;
+}
+.spidy-img {
+    height: 23%;
+    left: 42%;
+    top: 65%;
+}
+.lord-img {
+    height: 23%;
+    left: 73%;
+    top: 23%;
+}
+.groot-img {
+    height: 23%;
+    left: 68%;
+    top: 65%;
+}
+.thor-img {
+    height: 23%;
+    left: 22%;
+    top: 40%;
+}
+
+.container h2 {
+    z-index: 1;
+    padding-left: 45px;
+    position: relative;
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 32px;
+    line-height: 60px;
+}
+
+.container h2:hover {
+    color: rgb(197, 37, 37);
+    transition: 1s;
+    overflow: hidden;
+}
+
+@media (max-width:800px) {
+    .container h2 {
+        font-size: 60px;
+        letter-spacing: 19px;
+        line-height: 35px;
+    }
+
+    .container h2 span {
+        font-size: 26px;
+    }
+}
+
+#home {
+    background-color: black;
+}
